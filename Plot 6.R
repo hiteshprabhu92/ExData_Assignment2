@@ -49,4 +49,5 @@ print(qplot(Year, Emissions, data = aggregated.motor.zips, group = Group, color 
             xlab = "Year", main = "Comparison of Total Emissions by County"))
 
 ## Saving to file
-ggsave("Exploratory Data Analysis/ExData_Assignment2/plot6.png", scale=1.5)
+dev.copy(png, file="Exploratory Data Analysis/ExData_Assignment2/plot6.png", height=480, width=480)
+dev.off()

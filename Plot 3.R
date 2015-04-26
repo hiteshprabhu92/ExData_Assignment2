@@ -20,4 +20,5 @@ print(qplot(year, Emissions, data = NEI.24510.type, group = Pollutant_Type, colo
 
 
 ## Saving to file
-ggsave("Exploratory Data Analysis/ExData_Assignment2/plot3.png", scale=1.5)
+dev.copy(png, file="Exploratory Data Analysis/ExData_Assignment2/plot3.png", height=480, width=480)
+dev.off()
